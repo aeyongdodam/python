@@ -1,0 +1,16 @@
+#1193 - 분수찾기
+x=int(input())
+i=0
+k=0
+while i<x:
+    k+=1
+    i+=k
+if k%2==0:
+    temp=k+1
+    num1=x-(i-k)
+    num2=temp-num1
+else:
+    temp=k+1
+    num1=temp-(x-(i-k))
+    num2=temp-num1
+print("{0}/{1}".format(num1,num2))
