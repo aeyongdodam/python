@@ -1,0 +1,8 @@
+month=[31,28,31,30,31,30,31,31,30,31,30,31]
+day=['MON','TUE','WED','THU','FRI','SAT','SUN']
+m,d=map(int,input().split())
+total=0
+for i in range(m-1):
+    total+=month[i]
+total+=d-1
+print(day[total%7])
